@@ -1,0 +1,20 @@
+{
+  "name": "password-generator-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "parcel": "^2.1.1",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.13"
+  }
+}
