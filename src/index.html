@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator App</title>
+  <script src="app.js" type="module"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="grid place-items-center content-center text-center h-screen bg-cover bg-center"
+  style="background-image: url('./pw-bkg.jpg');">
+
+  <main class="p-6 md:p-10 grid gap-4 bg-zinc-800/30 backdrop-blur-lg rounded-lg text-zinc-100 accent-yellow-400">
+    <h1 class="text-4xl font-bold">Password Generator App</h1>
+    <div>
+      <input type="text" class="bg-zinc-50 w-full text-lg p-2 rounded-sm text-zinc-800 cursor-copy" id="password"
+        readonly>
+      <meter id="strength" class="w-full" min="0" max="100" low="30" high="75" optimum="100"></meter>
+    </div>
+    <div class="flex justify-between items-center gap-3 border-t-2 pt-3">
+      <label for="length">Characters</label>
+      <input type="range" min=8 max=30 value=15 name="length" id="length" class="bg-zinc-50 flex-1">
+      <p class="bg-zinc-50 w-8 h-8 text-zinc-800 grid place-items-center"><span id="lengthText"
+          class="cursor-default">15</span></p>
+    </div>
+    <div class="flex justify-between items-center gap-3 border-t-2 pt-3">
+      <label for="includeNumbers">Include Numbers</label>
+      <input type="checkbox" name="includeNumbers" id="includeNumbers" class="bg-zinc-50 w-8 h-8 cursor-pointer">
+    </div>
+    <div class="flex justify-between items-center gap-3 border-t-2 pt-3">
+      <label for="includeSymbols">Include Symbols</label>
+      <input type="checkbox" name="includeSymbols" id="includeSymbols" class="bg-zinc-50 w-8 h-8 cursor-pointer">
+    </div>
+    <button id="generate"
+      class="bg-yellow-500 text-zinc-800 font-bold py-2 px-3 rounded-sm hover:bg-yellow-50 transition-colors">Generate
+      Password</button>
+  </main>
+
+</body>
+
+</html>
