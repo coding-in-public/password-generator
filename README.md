@@ -1,5 +1,7 @@
-YouTube Tutorial: https://youtu.be/5rMC4QJdRSU
+## YouTube Tutorial
+https://youtu.be/5rMC4QJdRSU
 
+## Description and Links
 Generating strong passwords is important to security on the internet. But in this case, it’s just a great opportunity to play around with JavaScript. In this video, we’ll use ParcelJS, Tailwind CSS, and an npm package called Check Password Strength to write a custom password generator app. Have your own suggested improvements? Make a pull request on the community-improvements branch or leave a comment! 
 
 🔗  Key Links 🔗
