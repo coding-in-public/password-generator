@@ -14,8 +14,9 @@ const utils = {
   getCharsFromArray: (array, num) => {
     let chars = '';
     for(let i =0; i < num; i++){
-      const randNumber = utils.getRandomNumBetween(0, array.length - 1);
-      randNumber % 2 === 0 ? chars += array[randNumber] : chars += array[randNumber].toUpperCase();
+      utils.getRandomNumBetween(0, array.length - 1) % 2 === 0 
+        ? chars += array[utils.getRandomNumBetween(0, array.length - 1)] 
+      : chars += array[utils.getRandomNumBetween(0, array.length - 1)].toUpperCase();
     }
     return chars;
   }
